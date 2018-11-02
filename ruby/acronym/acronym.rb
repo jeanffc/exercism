@@ -1,5 +1,5 @@
 class Acronym
   def self.abbreviate (str)
-    return str.scan(/b\w/).map{ |w| w.chr }.join.upcase
+    return str.scan(/\b\w/).join.upcase
   end
 end
